@@ -267,7 +267,7 @@ body{
         justify-content: center;
         width: 100%;
         height: 3em;
-        padding: 1REM 0;
+        padding: 1rem 0;
     }
 
     .cabecalho__menu__link{
@@ -319,6 +319,94 @@ body{
     }
     .apresentacao__links__navegacao{
         font-size: 0.75rem;
+    }
+    .projects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        justify-items: center
+    }
+    
+    .projects__linhas {
+        flex-direction: column-reverse;
+
+    }
+
+    .projects__card {
+        width: 300px;
+        height: 200px;
+        border-radius: 20px;
+        background: var(--cor-primaria);
+        position: relative;
+        padding: .75rem .5rem;
+        border: 2px solid var(--cor-hover);
+        transition: 0.5s ease-out;
+        overflow: visible;
+        margin: 3em;
+    }
+       
+    .projects__card__details {
+        color: var(--cor-secundaria);
+        height: 100%;
+        gap: .5em;
+    }
+       
+    .projects__card__button {
+        transform: translate(-50%, 125%);
+        width: 60%;
+        border-radius: 1rem;
+        border: none;
+        background-color: var(--cor-terciaria);
+        color: var(--cor-secundaria);
+        font-size: 1rem;
+        font-family: var(--fonte-primaria);
+        padding: .5rem 1rem;
+        position: absolute;
+        left: 50%;
+        bottom: -.5rem;
+        opacity: 0;
+        transition: 0.3s ease-out;
+        text-decoration: none;
+    }
+    
+    .projects__alura_img {
+        justify-content: center;
+        height: 65%;
+        border-radius: 1rem;
+        margin-bottom: 0.3em;
+        filter: saturate(0.2);
+        transition: 0.5s ease-out;
+    }
+       
+    .projects__card__details__text {
+        color: var(--cor-secundaria);
+        font-family: var(--font-secundaria);
+        font-size: .8rem;
+    }
+       
+    /*Text*/
+    .projects__card__details__title {
+        font-size: 1em;
+        font-weight: bold;
+        font-family: var(--fonte-primaria);
+        margin-bottom: 0.5rem;
+    }
+       
+    /*Hover*/
+    .projects__card:hover {
+        border-color: var(--cor-terciaria);
+        box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+        
+    }
+       
+    .projects__card:hover .projects__card__button {
+        transform: translate(-50%, 50%);
+        opacity: 1;
+    }
+    
+    .projects__card:hover .projects__alura_img {
+        filter: saturate(1);   
     }
   }
   
@@ -384,12 +472,95 @@ body{
     .apresentacao__imagem__about{
         display: none;
     }
+
     .apresentacao__links__navegacao{
         font-size: 2rem;
     }
-  }
-  
-  /* Estilos para PCs */
-  @media screen and (min-width: 1025px) {
-    /* Adicione aqui os estilos específicos para PCs */
+
+    .projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center
+
+    }
+
+    .projects__card {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    background: var(--cor-primaria);
+    position: relative;
+    padding: .75rem .5rem;
+    border: 2px solid var(--cor-hover);
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin: 3em;
+    margin-bottom: 25rem;
+
+   }
+   
+    .projects__card__details {
+    color: var(--cor-secundaria);
+    height: 100%;
+    gap: .5em;
+   }
+   
+    .projects__card__button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+    font-family: var(--fonte-primaria);
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: -.5rem;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    text-decoration: none;
+   }
+
+   .projects__alura_img {
+    justify-content: center;
+    height: 65%;
+    border-radius: 1rem;
+    margin-bottom: 0.3em;
+    filter: saturate(0.2);
+    transition: 0.5s ease-out;
+   }
+   
+   .projects__card__details__text {
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    font-size: .8rem;
+   }
+   
+   /*Text*/
+   .projects__card__details__title {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: var(--fonte-primaria);
+    margin-bottom: 0.5rem;
+   }
+   
+   /*Hover*/
+   .projects__card:hover {
+    border-color: var(--cor-terciaria);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    
+   }
+   
+   .projects__card:hover .projects__card__button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+
+   .projects__card:hover .projects__alura_img {
+    filter: saturate(1);   
+   }
   }
