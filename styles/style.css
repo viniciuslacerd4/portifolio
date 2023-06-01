@@ -175,6 +175,7 @@ body{
     align-items: center;
     text-align: center;
     justify-items: center
+
 }
 
 .projects__card {
@@ -188,6 +189,7 @@ body{
     transition: 0.5s ease-out;
     overflow: visible;
     margin: 3em;
+    margin-bottom: 25rem;
 
    }
    
